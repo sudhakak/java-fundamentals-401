@@ -17,6 +17,8 @@ public class LibraryTest {
     Library libraryToTest = new Library();
     int rollCount = 10;
     int[] rolledNumArray = libraryToTest.roll(rollCount);
- //   assertTrue("Rolled Number is out of range", 0<=rolledNum && rolledNum<=rollCount );
+    for(int i=0; i<rolledNumArray.length; i++){
+        assertTrue("Rolled Number is out of range", 0<=rolledNumArray[i] && rolledNumArray[i]<=6 );
+    }
     }
 }
